@@ -1,0 +1,34 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "start": "node loader.js",
+    "dev": "nodemon loader.js",
+    "lint": "./node_modules/.bin/eslint  api/**/*.js config/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoLuizNunes/ci-lost-and-found.git"
+  },
+  "author": "Thiago Luiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoLuizNunes/ci-lost-and-found/issues"
+  },
+  "homepage": "https://github.com/ThiagoLuizNunes/ci-lost-and-found#readme",
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "express": "4.15.3",
+    "express-query-int": "1.0.1",
+    "mongoose": "4.11.5",
+    "node-restful": "0.2.6"
+  },
+  "devDependencies": {
+    "body-parser": "1.18.2",
+    "eslint": "^4.18.1",
+    "eslint-config-google": "^0.9.1",
+    "nodemon": "^1.14.11"
+  }
+}
