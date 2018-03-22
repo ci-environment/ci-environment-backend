@@ -1,4 +1,7 @@
 // const server = require('./config/server');
-const serverSoap = require('./config-soap/server');
+const ServerClass = require('./config-soap/server');
+
+let server = new ServerClass(4000);
+
 require('./config/database');
-require('./config/routes')(serverSoap);
+require('./config/routes')(server.getServer());

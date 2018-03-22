@@ -26,6 +26,4 @@ class ServerClass {
   }
 }
 
-let server = new ServerClass(4000);
-
-module.exports = server.getServer();
+module.exports = ServerClass;
