@@ -1,3 +1,4 @@
-const server = require('./config/server');
+// const server = require('./config/server');
+const serverSoap = require('./config-soap/server');
 require('./config/database');
-require('./config/routes')(server);
+require('./config/routes')(serverSoap);
