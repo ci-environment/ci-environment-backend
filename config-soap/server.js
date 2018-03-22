@@ -1,3 +1,5 @@
+'use strict';
+
 class ServerClass {
   constructor(p) {
     const port = p;
