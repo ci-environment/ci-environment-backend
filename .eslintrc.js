@@ -1,7 +1,8 @@
 module.exports = {
   "extends": "google",
   "parserOptions": {
-    "ecmaVersion": 6
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "rules":{
     "no-mixed-spaces-and-tabs": [2, "smart-tabs"],

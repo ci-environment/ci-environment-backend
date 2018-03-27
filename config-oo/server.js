@@ -1,11 +1,14 @@
+'use strict';
+
+const bodyParser = require('body-parser');
+const express = require('express');
+const allowCors = require('./cors');
+const queryParser = require('express-query-int');
+
 class ServerClass {
   constructor(p) {
     const port = p;
     // BODY parse of requistion
-    const bodyParser = require('body-parser');
-    const express = require('express');
-    const allowCors = require('./cors');
-    const queryParser = require('express-query-int');
     const server = express();
 
     server.use(bodyParser.urlencoded({extended: true}));
